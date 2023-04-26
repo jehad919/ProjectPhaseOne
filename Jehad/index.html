@@ -33,6 +33,24 @@
             document.getElementById("text").innerHTML = image.text
         }
 
+
+        /**
+         * Change The Picture
+         * @name Change
+         * @return The Picture Will Be Changed
+         */
+
+        /*
+        * @Test
+        * Test Plan:
+        * 1. Test Case: Initial count value is 1
+        * 2. Test Case: Initial count value is 2
+        * 3. Test Case: Fetch request fails
+        * 4. Test Case: DOM elements not found
+        * 5. Test Case: Consecutive calls with delays
+        */
+
+
         async function change() {
             const image = await fetch(`/${count === 1 ? '2' : '1'}`, {
                 method: "GET"
