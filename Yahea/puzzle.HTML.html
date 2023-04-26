@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+</head>
+
+<body>
+    <img src="/api/first.png" id="puzzle">
+    <br>
+    <button onclick="first()">Solve Puzzle</button>
+    <button onclick="seconde()">Reset Puzzle</button>
+
+    <script>
+        function first() {
+            document.getElementById("puzzle").src = "/api/second.png";
+        }
+
+        function seconde() {
+            document.getElementById("puzzle").src = "/api/first.png";
+        }
+    </script>
+</body>
+
+</html>
